@@ -7,21 +7,24 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif; /* Optional: Set a font family */
+  background-color: rgb(3, 11, 99);
+
 }
 .hamburger-icon {
-  width: 30px;
-  height: 24px;
+  width: 100px;
+  height: 100px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   cursor: pointer;
+  color:aqua 
 
 }
 
 .line {
   width: 100%;
   height: 4px;
-  background-color: rgb(9, 26, 209);
+
   transition: transform 0.3s ease, opacity 0.3s ease;
 
 }
@@ -44,7 +47,7 @@ body {
   background-color: rgb(22, 0, 144);
   transform: translateX(100%);
   transition: transform 0.3s ease-in-out;
-  box-shadow: -2px 0 5px rgba(0,0,0,0.1);
+  box-shadow: -2px 0 5px rgba(255, 255, 255, 0.1);
 }
 
 .menu.open {
@@ -75,8 +78,10 @@ h1 {
   font-weight: bold;
   transition: color 0.7s ease; 
   animation-name: example;
-  animation-duration: 4s;
+  animation-duration: 2s;
   animation-iteration-count: infinite;
+  font-family: "Times New Roman", Times, serif;
+
 
 
 }
@@ -90,35 +95,6 @@ h1:hover {
 
 @keyframes example {
   from {color: rgb(255, 0, 212);}
-  to {color: rgb(0, 18, 219);}
-  to {color: rgb(150, 0, 220);}
-}
-
-
-.table-container {
-  margin: 0 auto;
-  padding: 20px;
-  width: 80%;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.table {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-.table th,
-.table td {
-  padding: 12px;
-  border: 1px solid #ddd;
-  text-align: left;
-}
-
-.table th {
-  background-color: #f4f4f4;
-  font-weight: bold;
-}
-
-.table tbody tr:hover {
-  background-color: #f9f9f9;
+  from {color: rgb(150,0,220)}
+  to {color: rgb(255, 0, 212);}
 }
